@@ -1,0 +1,12 @@
+.venv
+__pycache__
+.git
+.env
+data/
+logs/
+upload/
+*.pyc
+.pytest_cache
+.vscode
+.gemini
+uv.lock
