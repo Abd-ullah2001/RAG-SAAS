@@ -1,0 +1,31 @@
+# CodeRabbit Configuration for RAG SaaS
+# This file optimizes the AI review process for this repository.
+
+# Language-specific settings
+language:
+  python:
+    # Ensure it pays attention to FastAPI and Pydantic patterns
+    frameworks: ["fastapi", "pydantic"]
+    # Check for common async/await mistakes
+    linting: true
+  javascript:
+    # Optimize for Next.js and React 19 patterns
+    frameworks: ["nextjs", "react"]
+
+# Review settings
+reviews:
+  # Enable high-level PR summaries
+  summary: true
+  # Analyze for security vulnerabilities (important for a SaaS)
+  security: true
+  # Provide specific code improvement suggestions
+  suggestions: true
+
+# Ignore files that don't need AI review
+ignore:
+  - "**/node_modules/**"
+  - "**/.venv/**"
+  - "**/dist/**"
+  - "**/.next/**"
+  - "package-lock.json"
+  - "uv.lock"
