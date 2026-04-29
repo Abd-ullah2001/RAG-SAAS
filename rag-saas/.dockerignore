@@ -9,4 +9,3 @@ upload/
 .pytest_cache
 .vscode
 .gemini
-uv.lock
